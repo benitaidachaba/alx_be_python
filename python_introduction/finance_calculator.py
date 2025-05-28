@@ -1,5 +1,4 @@
 monthly_income = int(input("Enter your monthly income: "))
-# This script calculates the monthly savings of a person based on their income and expenses.
 monthly_expenses = int(input("Enter your total monthly expenses: "))
 
 # Calculate monthly savings
