@@ -10,7 +10,12 @@ def main():
 
     while True:
         display_menu()
-        choice = int(input("Enter your choice: ").strip())
+
+        try:
+            choice = int(input("Enter your choice: ").strip())
+        except ValueError:
+            print("Invalid input. Please enter a number from 1 to 4.")
+            continue
 
         if choice == 1:
             item = input("Enter item to add: ").strip()
