@@ -11,10 +11,10 @@ def main():
     while True:
         display_menu()
 
-        try:
-            choice = int(input("Enter your choice: ").strip())
-        except ValueError:
-            print("Invalid input. Please enter a number from 1 to 4.")
+        choice = int(input("Enter your choice: ").strip())
+        # Input validation for choice
+        if choice < 1 or choice > 4:
+            print("Please enter a valid choice (1-4).")
             continue
 
         if choice == 1:
